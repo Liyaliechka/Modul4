@@ -1,0 +1,30 @@
+rm -r project.yaml
+nano project.yaml
+cd src/mappings
+ls -la
+rm -r mappingHandlers.ts
+nano mappingHandlers.ts
+cd ..
+ls -la
+yarn codegen
+yarn build
+docker-compose pull
+docker-compose up
+docker-compose stop
+ls -la
+rm -r .git
+git init
+git remote add origin https://github.com/Liyaliechka/Modul4.git
+git config --global user.name "Liyaliechka"
+git config --global user.email "kkuskusya@mail.ru"
+git add .
+git commit -m 'create project'
+git push origin master
+cd ..
+Liya, [22.01.2022 1:02]
+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
+$ cd ~/.ssh
+$ ls
+authorized_keys2  id_dsa       known_hosts
+cd $HOME
+git clone https://github.com/MikkiKill/tutorials-simple-aggregation_v2_m4-4 && cd tutorials-simple-aggregation_v2_m4-4 && yarn install && yarn codegex
